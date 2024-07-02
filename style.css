@@ -1,0 +1,124 @@
+.claudia  {
+
+        position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca el div en el fondo */
+
+}
+
+body {
+    background-color: #000a09;
+    color: #40e0d3; /* Texto verde */
+    font-family: "IBM Plex Mono", monospace;
+    font-size: small;
+    font-weight: 400;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.centratecona {
+    max-width: 80rem; /* Aumentar el ancho máximo del contenedor */
+    width: 100%;
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+    padding: 20px;
+    box-sizing: border-box; /* Asegura que el padding esté incluido en el ancho total */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000a09;
+    padding: 20px;
+    border-bottom: 5px solid #40e0d3;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+pre {
+    font-size: 1.5em;
+    white-space: pre-wrap;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.texto-derecha {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.texto-derecha h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.texto-derecha p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Main content */
+main {
+    padding: 1rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+article {
+    background-color: #182221;
+    border-left: 4px solid #40e0d3; /* Borde izquierdo verde */
+    margin-bottom: 1rem;
+    padding: 1rem;
+    margin-left: 0.5rem;
+
+}
+
+article header {
+    display: block;
+    text-align:center;
+    border: 2px solid #242d2b;
+    margin-bottom: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+article h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+article p {
+    font-weight: 400;
+}
+
+.post-meta {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+
+
+/* Responsive design */
+@media only screen and (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    article h2 {
+        font-size: 1.2rem;
+    }
+    
+    footer {
+        font-size: 0.8rem;
+    }
+}
